@@ -107,21 +107,18 @@ const EmailList = () => {
 
   if (listToShow.length < 1) {
     return (
-      <section
-        className='email-list-section'
-        onClick={handleEmailListContainerClick}
-      >
+      <section className='email-list-section'>
         <p className='no-list-message'>No {activeFilter} messages</p>
       </section>
     );
   }
 
   return (
-    <section
-      className='email-list-section'
-      onClick={handleEmailListContainerClick}
-    >
-      <div className='email-list-container'>
+    <section className='email-list-section'>
+      <div
+        className='email-list-container'
+        onClick={handleEmailListContainerClick}
+      >
         {listToShow.map((singleEmail) => {
           const {
             id,
