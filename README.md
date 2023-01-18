@@ -1,2 +1,3 @@
-# roc8-email-client-app
- Email Client App using React
+# roc8 Email Client App
+
+Email Client App using React
